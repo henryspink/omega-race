@@ -1,18 +1,6 @@
 """
 Henry Spink, 2/5/24
 game for applied computing 1/2
-
-Mr Watkins:
-    Game stuff:
-    - You can add to your starting coins amount by pressing Shift + C
-      and entering your username and the amount
-    - usernames must be consistent for coins, cars, and leaderboard to work
-    - you can change the number of laps needed to win by pressing Options in the main menu
-    - to exit the game you can either press Shift + q or Delete
-    Code stuff:
-    - All the classes are in racing_game_classes.py
-    - Turtles and the screen is defined in racing_game_constants.py
-    - All data is stored in database.json
 """
 # pylint: disable=line-too-long
 #* imports
