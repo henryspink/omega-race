@@ -2355,9 +2355,14 @@ class Database:
         Returns:
         dict: the Database
         """
-        with open("database.json", "r", encoding="utf-8") as dbfile:
-            self.db = json.load(dbfile)
-            return self.db
+        try:
+            with open("database.json", "r", encoding="utf-8") as dbfile:
+                self.db = json.load(dbfile)
+                return self.db
+        except FileNotFoundError:
+            with open("database.json", "w", encoding="utf-8") as dbfile:
+                json.dump({}, dbfile)
+            return {}
 
     def save(self) -> None:
         """
